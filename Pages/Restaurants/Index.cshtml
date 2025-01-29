@@ -1,0 +1,36 @@
+@page
+@model RestaurantReviews.Pages.Restaurants.IndexModel
+
+<h1>Lista Restaurante</h1>
+
+<p>
+    <a asp-page="Create">Adaugă Restaurant</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nume</th>
+            <th>Adresă</th>
+            <th>Oraș</th>
+            <th>Tip Bucătărie</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Restaurants)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Address</td>
+                <td>@item.City</td>
+                <td>@item.CuisineType</td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@item.ID">Edit</a> |
+                    <a asp-page="Details" asp-route-id="@item.ID">Detalii</a> |
+                    <a asp-page="Delete" asp-route-id="@item.ID">Șterge</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,25 @@
+@page
+@model RestaurantReviews.Pages.Restaurants.CreateModel
+
+<h1>Adaugă Restaurant</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Restaurant.Name"></label>
+        <input asp-for="Restaurant.Name" class="form-control" />
+        <span asp-validation-for="Restaurant.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.Address"></label>
+        <input asp-for="Restaurant.Address" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.City"></label>
+        <input asp-for="Restaurant.City" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.CuisineType"></label>
+        <input asp-for="Restaurant.CuisineType" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Salvează</button>
+</form>
