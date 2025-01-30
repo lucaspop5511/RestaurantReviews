@@ -1,0 +1,49 @@
+@page
+@model RestaurantReviews.Pages.Reviews.IndexModel
+
+<h1>Lista Recenzii</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-primary">Adaugă Recenzie</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Restaurant</th>
+            <th>Rating</th>
+            <th>Comentariu</th>
+            <th>Data</th>
+            <th>Etichete</th>
+            <th>Acțiuni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Reviews)
+        {
+            <tr>
+                <td>@item.Restaurant.Name</td>
+                <td>@item.Rating</td>
+                <td>@item.Comment</td>
+                <td>@item.DatePosted.ToShortDateString()</td>
+                <td>
+                    @if (item.ReviewTags != null && item.ReviewTags.Count > 0)
+                    {
+                        @foreach (var reviewTag in item.ReviewTags)
+                        {
+                            <span class="badge bg-info text-dark">@reviewTag.Tag.Name</span>
+                        }
+                    }
+                    else
+                    {
+                        <span class="text-muted">Fără etichete</span>
+                    }
+                </td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@item.ID" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-page="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-sm">Șterge</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

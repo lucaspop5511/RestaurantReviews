@@ -1,0 +1,29 @@
+﻿@page "{id:int}"
+@model RestaurantReviews.Pages.Restaurants.EditModel
+
+<h1>Editare Restaurant</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Restaurant.ID" />
+    
+    <div class="form-group">
+        <label asp-for="Restaurant.Name"></label>
+        <input asp-for="Restaurant.Name" class="form-control" />
+        <span asp-validation-for="Restaurant.Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.Address"></label>
+        <input asp-for="Restaurant.Address" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.City"></label>
+        <input asp-for="Restaurant.City" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.CuisineType"></label>
+        <input asp-for="Restaurant.CuisineType" class="form-control" />
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Salvează</button>
+    <a asp-page="Index" class="btn btn-secondary">Anulează</a>
+</form>

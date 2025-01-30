@@ -1,0 +1,24 @@
+@page "{id:int}"
+@model RestaurantReviews.Pages.Reviews.EditModel
+
+<h1>Editare Recenzie</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Review.ID" />
+    
+    <div class="form-group">
+        <label asp-for="Review.RestaurantID"></label>
+        <select asp-for="Review.RestaurantID" asp-items="Model.Restaurants" class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Review.Rating"></label>
+        <input asp-for="Review.Rating" class="form-control" type="number" min="1" max="5" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Review.Comment"></label>
+        <textarea asp-for="Review.Comment" class="form-control"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Salvează</button>
+    <a asp-page="Index" class="btn btn-secondary">Anulează</a>
+</form>

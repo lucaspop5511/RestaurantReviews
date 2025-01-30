@@ -32,6 +32,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdGF1cmFudHMvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Restaurants/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdGF1cmFudHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Restaurants/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdGF1cmFudHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Restaurants/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdGF1cmFudHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Restaurants/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdGF1cmFudHMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,12 +52,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmVzdGF1cmFudHMvUmVzdGF1cmFudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Reviews/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmV2aWV3cy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Reviews/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmV2aWV3cy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Reviews/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmV2aWV3cy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Reviews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmV2aWV3cy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Reviews/Reviews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmV2aWV3cy9SZXZpZXdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Tags/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFncy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Tags/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFncy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Tags/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFncy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Tags/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFncy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/Tags/Tags.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvVGFncy9UYWdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/test/Documents/FSEGA/Semestru 1/Medii de Programare/Proiect/RestaurantReviews/Pages/_ViewImports.cshtml]

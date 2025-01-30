@@ -1,0 +1,13 @@
+@page
+@model RestaurantReviews.Pages.Tags.CreateModel
+
+<h1>Adaugă Etichetă</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Tag.Name"></label>
+        <input asp-for="Tag.Name" class="form-control" />
+        <span asp-validation-for="Tag.Name" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Salvează</button>
+</form>

@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RestaurantReviews.Data;
 
@@ -10,9 +11,11 @@ using RestaurantReviews.Data;
 namespace RestaurantReviews.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250130100152_AddReviewTags")]
+    partial class AddReviewTags
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.17");
@@ -110,33 +113,6 @@ namespace RestaurantReviews.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Tags");
-
-                    b.HasData(
-                        new
-                        {
-                            ID = 1,
-                            Name = "Friendly Staff"
-                        },
-                        new
-                        {
-                            ID = 2,
-                            Name = "Fast Service"
-                        },
-                        new
-                        {
-                            ID = 3,
-                            Name = "Cozy Atmosphere"
-                        },
-                        new
-                        {
-                            ID = 4,
-                            Name = "Great Coffee"
-                        },
-                        new
-                        {
-                            ID = 5,
-                            Name = "Affordable Prices"
-                        });
                 });
 
             modelBuilder.Entity("RestaurantReviews.Models.Review", b =>

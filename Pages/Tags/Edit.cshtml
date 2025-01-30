@@ -1,0 +1,17 @@
+@page "{id:int}"
+@model RestaurantReviews.Pages.Tags.EditModel
+
+<h1>Editare Etichetă</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Tag.ID" />
+    
+    <div class="form-group">
+        <label asp-for="Tag.Name"></label>
+        <input asp-for="Tag.Name" class="form-control" />
+        <span asp-validation-for="Tag.Name" class="text-danger"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Salvează</button>
+    <a asp-page="Index" class="btn btn-secondary">Anulează</a>
+</form>

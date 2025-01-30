@@ -1,0 +1,15 @@
+@page "{id:int}"
+@model RestaurantReviews.Pages.Tags.DeleteModel
+
+<h1>Ștergere Etichetă</h1>
+
+<h3>Ești sigur că vrei să ștergi această etichetă?</h3>
+<div>
+    <h4>@Model.Tag.Name</h4>
+
+    <form method="post">
+        <input type="hidden" asp-for="Tag.ID" />
+        <button type="submit" class="btn btn-danger">Șterge</button>
+        <a asp-page="Index" class="btn btn-secondary">Anulează</a>
+    </form>
+</div>
