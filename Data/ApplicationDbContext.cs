@@ -17,7 +17,7 @@ namespace RestaurantReviews.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Definim relația M:N între Review și Tag
+            // relatia M:N intre Review si Tag
             modelBuilder.Entity<ReviewTag>()
                 .HasOne(rt => rt.Review)
                 .WithMany(r => r.ReviewTags)
