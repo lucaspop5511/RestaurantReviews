@@ -1,36 +1,19 @@
 @page
-@model RestaurantReviews.Pages.Restaurants.IndexModel
+@model RestaurantReviews.Pages.IndexModel
 
-<h1>Lista Restaurante</h1>
-
-<p>
-    <a asp-page="Create">Adaugă Restaurant</a>
-</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nume</th>
-            <th>Adresă</th>
-            <th>Oraș</th>
-            <th>Tip Bucătărie</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Restaurants)
-        {
-            <tr>
-                <td>@item.Name</td>
-                <td>@item.Address</td>
-                <td>@item.City</td>
-                <td>@item.CuisineType</td>
-                <td>
-                    <a asp-page="Edit" asp-route-id="@item.ID" class="btn btn-warning btn-sm">Edit</a>
-                    <a asp-page="Details" asp-route-id="@item.ID" class="btn btn-info btn-sm">Detalii</a>
-                    <a asp-page="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-sm">Șterge</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+<div class="container text-center mt-5">
+    <h1 class="display-4">Bine ai venit la Restaurant Reviews!</h1>
+    <p class="lead">Descoperă restaurante, lasă recenzii și explorează tag-uri.</p>
+    
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <a asp-page="/Restaurants/Restaurants" class="btn btn-primary btn-lg">Vezi Restaurante</a>
+        </div>
+        <div class="col-md-4">
+            <a asp-page="/Reviews/Index" class="btn btn-primary btn-lg">Vezi Recenzii</a>
+        </div>
+        <div class="col-md-4">
+            <a asp-page="/Tags/Index" class="btn btn-primary btn-lg">Explorează Tag-uri</a>
+        </div>
+    </div>
+</div>

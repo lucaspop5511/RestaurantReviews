@@ -12,7 +12,7 @@ namespace RestaurantReviews.Models
         [StringLength(50)]
         public string Name { get; set; }
 
-        // Relație M:N cu ReviewTags
+        // relatie M:N cu ReviewTags
         public ICollection<ReviewTag>? ReviewTags { get; set; }
     }
 }

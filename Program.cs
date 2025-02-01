@@ -3,7 +3,7 @@ using RestaurantReviews.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 🔹 Adaugă conexiunea la SQLite
+// SQLite
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
@@ -21,5 +21,6 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+app.MapFallbackToPage("/Index");
 
 app.Run();

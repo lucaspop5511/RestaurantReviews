@@ -24,10 +24,10 @@ namespace RestaurantReviews.Pages.Reviews
 
         public SelectList Restaurants { get; set; }
 
-        // ✅ Proprietatea pentru lista de etichete disponibile
+        // proprietatea pentru lista de etichete disponibile
         public List<Tag> Tags { get; set; } = new List<Tag>();
 
-        // ✅ Proprietatea pentru etichetele selectate de utilizator
+        // proprietatea pentru etichetele selectate de utilizator
         [BindProperty]
         public List<int> SelectedTags { get; set; } = new List<int>();
 
@@ -50,7 +50,7 @@ namespace RestaurantReviews.Pages.Reviews
             _context.Reviews.Add(Review);
             await _context.SaveChangesAsync();
 
-            // ✅ Salvăm etichetele asociate recenziei în `ReviewTags`
+            // salvam etichetele asociate recenziei in `ReviewTags`
             foreach (var tagId in SelectedTags)
             {
                 _context.ReviewTags.Add(new ReviewTag { ReviewID = Review.ID, TagID = tagId });

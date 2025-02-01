@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace RestaurantReviews.Pages.Reviews
 {
-    public class IndexModel : PageModel
+    public class ReviewsIndexModel : PageModel
     {
         private readonly ApplicationDbContext _context;
 
-        public IndexModel(ApplicationDbContext context)
+        public ReviewsIndexModel(ApplicationDbContext context)
         {
             _context = context;
         }
@@ -22,8 +22,6 @@ namespace RestaurantReviews.Pages.Reviews
         {
             Reviews = await _context.Reviews
                 .Include(r => r.Restaurant)
-                .Include(r => r.ReviewTags)  // ✅ Include relația cu etichetele
-                .ThenInclude(rt => rt.Tag)   // ✅ Include numele etichetelor
                 .ToListAsync();
         }
     }

@@ -1,10 +1,10 @@
 @page
-@model RestaurantReviews.Pages.Reviews.IndexModel
+@model RestaurantReviews.Pages.Reviews.ReviewsIndexModel
 
-<h1>Lista Recenzii</h1>
+<h1>Lista Review-uri</h1>
 
 <p>
-    <a asp-page="Create" class="btn btn-primary">Adaugă Recenzie</a>
+    <a asp-page="Create" class="btn btn-primary">Adaugă Review</a>
 </p>
 
 <table class="table">
@@ -14,7 +14,6 @@
             <th>Rating</th>
             <th>Comentariu</th>
             <th>Data</th>
-            <th>Etichete</th>
             <th>Acțiuni</th>
         </tr>
     </thead>
@@ -22,25 +21,13 @@
         @foreach (var item in Model.Reviews)
         {
             <tr>
-                <td>@item.Restaurant.Name</td>
+                <td>@item.Restaurant?.Name</td>
                 <td>@item.Rating</td>
                 <td>@item.Comment</td>
-                <td>@item.DatePosted.ToShortDateString()</td>
-                <td>
-                    @if (item.ReviewTags != null && item.ReviewTags.Count > 0)
-                    {
-                        @foreach (var reviewTag in item.ReviewTags)
-                        {
-                            <span class="badge bg-info text-dark">@reviewTag.Tag.Name</span>
-                        }
-                    }
-                    else
-                    {
-                        <span class="text-muted">Fără etichete</span>
-                    }
-                </td>
+                <td>@item.DatePosted.ToString("dd-MM-yyyy")</td>
                 <td>
                     <a asp-page="Edit" asp-route-id="@item.ID" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-page="Details" asp-route-id="@item.ID" class="btn btn-info btn-sm">Detalii</a>
                     <a asp-page="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-sm">Șterge</a>
                 </td>
             </tr>
