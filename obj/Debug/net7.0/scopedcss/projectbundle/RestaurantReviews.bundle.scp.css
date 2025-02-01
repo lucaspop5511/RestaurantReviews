@@ -1,49 +1,57 @@
 /* _content/RestaurantReviews/Pages/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand[b-sx94ych0wr] {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+.navbar[b-sx94ych0wr] {
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
 }
 
-a[b-sx94ych0wr] {
-  color: #0077cc;
+.navbar-brand[b-sx94ych0wr] {
+  font-size: 1.5rem;
+  color: #143248;
 }
 
+.navbar-nav .nav-link[b-sx94ych0wr] {
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover[b-sx94ych0wr] {
+  color: #1b6ec2;
+}
+
+/* Buttons */
 .btn-primary[b-sx94ych0wr] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #0077cc;
+  border-color: #005fa3;
 }
 
-.nav-pills .nav-link.active[b-sx94ych0wr], .nav-pills .show > .nav-link[b-sx94ych0wr] {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.btn-primary:hover[b-sx94ych0wr] {
+  background-color: #005fa3;
+  border-color: #004d8a;
 }
 
-.border-top[b-sx94ych0wr] {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom[b-sx94ych0wr] {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow[b-sx94ych0wr] {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy[b-sx94ych0wr] {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
+/* Footer */
 .footer[b-sx94ych0wr] {
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 0.9rem;
+  padding: 20px 0;
   position: absolute;
   bottom: 0;
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+
+/* Links */
+a[b-sx94ych0wr] {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover[b-sx94ych0wr] {
+  color: #005fa3;
+}
+
+/* Box Shadow */
+.box-shadow[b-sx94ych0wr] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .1);
 }
